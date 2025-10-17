@@ -56,7 +56,7 @@ jobs:
           COPR_TOKEN: ${{ secrets.COPR_TOKEN }}
         run: |
           mkdir -p ~/.config
-          cat > ~/.config/copr <<'EOF'
+          cat <<EOF > ~/.config/copr
 [copr-cli]
 login = ${COPR_LOGIN}
 token = ${COPR_TOKEN}
